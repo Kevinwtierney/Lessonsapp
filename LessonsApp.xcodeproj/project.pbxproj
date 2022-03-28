@@ -15,6 +15,7 @@
 		D5D8F9A327EE89FB00C5ED68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D8F9A227EE89FB00C5ED68 /* Assets.xcassets */; };
 		D5D8F9A627EE89FB00C5ED68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D8F9A527EE89FB00C5ED68 /* Preview Assets.xcassets */; };
 		D5D8F9AE27EE8A2700C5ED68 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D8F9AD27EE8A2700C5ED68 /* ContentModel.swift */; };
+		D5F6ACBB27F22EE40028BEFD /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6ACBA27F22EE40028BEFD /* HomeViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D5D8F9A227EE89FB00C5ED68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5D8F9A527EE89FB00C5ED68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D5D8F9AD27EE8A2700C5ED68 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		D5F6ACBA27F22EE40028BEFD /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				D5D8F9A027EE89F900C5ED68 /* HomeView.swift */,
+				D5F6ACBA27F22EE40028BEFD /* HomeViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5D8F9A127EE89F900C5ED68 /* HomeView.swift in Sources */,
+				D5F6ACBB27F22EE40028BEFD /* HomeViewRow.swift in Sources */,
 				D5D8F99F27EE89F900C5ED68 /* LessonsAppApp.swift in Sources */,
 				D5D8F9AE27EE8A2700C5ED68 /* ContentModel.swift in Sources */,
 				D58E4E0127EFA27500FFD009 /* Module.swift in Sources */,

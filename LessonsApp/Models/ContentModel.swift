@@ -39,7 +39,11 @@ class ContentModel: ObservableObject{
             print(error)
         }
         
+        // get url to the style File
+        
         let styleUrl = Bundle.main.url(forResource: "style", withExtension: "html")
+        
+      //  read the Style file into style variable
         
         do{
             let styleData = try Data(contentsOf: styleUrl!)

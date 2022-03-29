@@ -18,6 +18,9 @@
 		D5F6ACBB27F22EE40028BEFD /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6ACBA27F22EE40028BEFD /* HomeViewRow.swift */; };
 		D5F6ACBE27F236770028BEFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6ACBD27F236770028BEFD /* ContentView.swift */; };
 		D5F6ACC127F24B8C0028BEFD /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6ACC027F24B8C0028BEFD /* ContentViewRow.swift */; };
+		D5F6ACC327F26E310028BEFD /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6ACC227F26E310028BEFD /* ContentDetailView.swift */; };
+		D5F6ACC627F272140028BEFD /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F6ACC527F272140028BEFD /* AVKit.framework */; };
+		D5F6ACC827F2734C0028BEFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6ACC727F2734C0028BEFD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		D5F6ACBA27F22EE40028BEFD /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		D5F6ACBD27F236770028BEFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D5F6ACC027F24B8C0028BEFD /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
+		D5F6ACC227F26E310028BEFD /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		D5F6ACC527F272140028BEFD /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		D5F6ACC727F2734C0028BEFD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5F6ACC627F272140028BEFD /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +58,7 @@
 			children = (
 				D5F6ACBC27F236030028BEFD /* HomeView */,
 				D5F6ACBF27F236960028BEFD /* ContentView */,
+				D5F6ACC227F26E310028BEFD /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -83,6 +91,7 @@
 			children = (
 				D5D8F99D27EE89F900C5ED68 /* LessonsApp */,
 				D5D8F99C27EE89F900C5ED68 /* Products */,
+				D5F6ACC427F272140028BEFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +114,7 @@
 				D5D8F99E27EE89F900C5ED68 /* LessonsAppApp.swift */,
 				D5D8F9A227EE89FB00C5ED68 /* Assets.xcassets */,
 				D5D8F9A427EE89FB00C5ED68 /* Preview Content */,
+				D5F6ACC727F2734C0028BEFD /* Constants.swift */,
 			);
 			path = LessonsApp;
 			sourceTree = "<group>";
@@ -142,6 +152,14 @@
 				D5F6ACC027F24B8C0028BEFD /* ContentViewRow.swift */,
 			);
 			path = ContentView;
+			sourceTree = "<group>";
+		};
+		D5F6ACC427F272140028BEFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5F6ACC527F272140028BEFD /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,10 +237,12 @@
 				D5D8F9A127EE89F900C5ED68 /* HomeView.swift in Sources */,
 				D5F6ACBB27F22EE40028BEFD /* HomeViewRow.swift in Sources */,
 				D5F6ACBE27F236770028BEFD /* ContentView.swift in Sources */,
+				D5F6ACC327F26E310028BEFD /* ContentDetailView.swift in Sources */,
 				D5D8F99F27EE89F900C5ED68 /* LessonsAppApp.swift in Sources */,
 				D5F6ACC127F24B8C0028BEFD /* ContentViewRow.swift in Sources */,
 				D5D8F9AE27EE8A2700C5ED68 /* ContentModel.swift in Sources */,
 				D58E4E0127EFA27500FFD009 /* Module.swift in Sources */,
+				D5F6ACC827F2734C0028BEFD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

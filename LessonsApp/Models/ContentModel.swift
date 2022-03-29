@@ -17,6 +17,9 @@ class ContentModel: ObservableObject{
     @Published var currentModule: Module?
     var currentModuleIndex = 0
     
+    // Current Lesson
+    @Published var currentLesson: Lesson?
+    var currentLessonIndex = 0
     
     var styleData: Data?
     
@@ -53,7 +56,7 @@ class ContentModel: ObservableObject{
         
         let styleUrl = Bundle.main.url(forResource: "style", withExtension: "html")
         
-      //  read the Style file into style variable
+        //  read the Style file into style variable
         
         do{
             let styleData = try Data(contentsOf: styleUrl!)
@@ -80,13 +83,51 @@ class ContentModel: ObservableObject{
                 currentModuleIndex = index
                 break
             }
-
+            
         }
-
+        
         // set the current module
         
         currentModule  = modules[currentModuleIndex]
-
+        
+    }
+    
+    func beginLesson(_ lessonIndex:Int) {
+        
+        if lessonIndex < currentModule!.content.lessons.count {
+            currentLessonIndex = lessonIndex
+            
+        }
+        else {
+            currentLessonIndex = 0
+        }
+        
+        // set current lesson
+        
+        currentLesson = currentModule!.content.lessons[currentLessonIndex]
+        
+    }
+    
+    func hasNextLesson() -> Bool {
+ 
+       return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
+    }
+    
+    func nextLesson() {
+        
+        //Advance lesson index
+        currentLessonIndex += 1
+        
+        //check that index is within range
+        if currentLessonIndex < currentModule!.content.lessons.count {
+            
+            // set the current lesson property
+            currentLesson = currentModule?.content.lessons[currentLessonIndex]
+        }
+        else{
+            currentLesson = nil
+            currentLessonIndex = 0
+        }
     }
     
 }

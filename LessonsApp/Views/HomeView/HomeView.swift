@@ -29,7 +29,10 @@ struct HomeView: View {
                                 NavigationLink(
                                     destination: ContentView().onAppear(perform: {
                                         model.beginModule(module.id)
+                                       
                                     }),
+                                    tag: module.id,
+                                    selection: $model.currentContentSelected,
                                     label: {
                                         //Learning Card
                                         

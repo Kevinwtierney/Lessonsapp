@@ -21,7 +21,7 @@ struct CodeTextView: UIViewRepresentable {
     func updateUIView(_ textView: UITextView, context: Context) {
         
         
-        textView.attributedText = model.lessonExplanation
+        textView.attributedText = model.codeText
         
         // Scroll back top top
         
